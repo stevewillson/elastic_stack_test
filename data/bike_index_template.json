@@ -1,6 +1,7 @@
 {
     "index_patterns": ["bike*"],
-    "version": 50003,
+    "template": "bike_rentals",
+    "version": 3,
     "order" : 3,
     "settings":{
         "number_of_replicas": "0",
