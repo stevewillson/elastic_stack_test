@@ -1,6 +1,6 @@
 {
-    "index_patterns": ["bike*"]
-    "version":50003,
+    "index_patterns": ["bike*"],
+    "version": 50003,
     "order" : 3,
     "settings":{
         "number_of_replicas": "0",
