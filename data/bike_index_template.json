@@ -22,34 +22,31 @@
                         }
                     }
                 },
+                "trip_id": { "type": "integer" },
+                "year": { "type": "integer" },
+                "month": { "type": "integer" },
+                "week": { "type": "integer" },
+                "day": { "type": "integer" },
+                "hour": { "type": "integer" },
                 "usertype": { "type": "text" },
                 "gender": { "type": "text" },
-                "from_station_name": { "type": "text" },
-                "to_station_name": { "type": "text" },
-                "events": { "type": "text" },
-                "conditions": { "type": "text" },
-
-                "trip_id": { "type": "integer" },
                 "starttime": { "type": "date_time" },
                 "stoptime": { "type": "date_time" },
                 "tripduration": { "type": "float" },
+                "temperature": { "type": "float" },
+                "events": { "type": "text" },
                 "from_station_id":  { "type": "integer" },
+                "from_station_name": { "type": "text" },
+
+                "location_start" { "type": "geo_point" },
+
                 "dpcapacity_start": { "type": "float" },
                 "to_station_id":  { "type": "integer" },
-                "dpcapacity_end": { "type": "float" },
-                "temperature": { "type": "float" },
-                "windchill": { "type": "float" },
-                "dewpoint": { "type": "float" },
-                "humidity": { "type": "float" },
-                "pressure": { "type": "float" },
-                "visibility": { "type": "float" },
-                "wind_speed": { "type": "float" },
-                "precipitation": { "type": "float" },
-                "rain": { "type": "float" },
-                "longitude_start": { "type": "float" },
-                "latitude_start": { "type": "float" },
-                "longitude_end": { "type": "float" },
-                "latitude_end": { "type": "float" }
+                "to_station_name": { "type": "text" },
+
+                "location_end" { "type": "geo_point" },
+
+                "dpcapacity_end": { "type": "float" }
             }
         }
     }
