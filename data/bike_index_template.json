@@ -38,13 +38,13 @@
                 "from_station_id":  { "type": "integer" },
                 "from_station_name": { "type": "text" },
 
-                "location_start" { "type": "geo_point" },
+                "location_start": { "type": "geo_point" },
 
                 "dpcapacity_start": { "type": "float" },
                 "to_station_id":  { "type": "integer" },
                 "to_station_name": { "type": "text" },
 
-                "location_end" { "type": "geo_point" },
+                "location_end": { "type": "geo_point" },
 
                 "dpcapacity_end": { "type": "float" }
             }
