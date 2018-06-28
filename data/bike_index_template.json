@@ -32,15 +32,11 @@
                 "dpcapacity_end": { "type": "float" },
                 "location_start": { 
                     "properties": {
-                        "latitude": { "type": "float" },
-                        "longitude": { "type": "float" },
                         "location": { "type": "geo_point" }
                     }
                 },
                 "location_end": { 
                     "properties": {
-                        "latitude": { "type": "float" },
-                        "longitude": { "type": "float" },
                         "location": { "type": "geo_point" }
                     }
                 }
