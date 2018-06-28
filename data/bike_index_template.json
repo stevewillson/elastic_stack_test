@@ -30,16 +30,8 @@
                 "to_station_id":  { "type": "integer" },
                 "to_station_name": { "type": "text" },
                 "dpcapacity_end": { "type": "float" },
-                "location_start": { 
-                    "properties": {
-                        "location": { "type": "geo_point" }
-                    }
-                },
-                "location_end": { 
-                    "properties": {
-                        "location": { "type": "geo_point" }
-                    }
-                }
+                "location_start": { "type": "geo_point" },
+                "location_end": { "type": "geo_point" }
             }
         }
     }
