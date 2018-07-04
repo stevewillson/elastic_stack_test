@@ -9,30 +9,28 @@
         "index.refresh_interval":"30s"
     },
     "mappings": {
-        "_doc": {
-            "properties": {
-                "trip_id": { "type": "integer" },
-                "year": { "type": "integer" },
-                "month": { "type": "integer" },
-                "week": { "type": "integer" },
-                "day": { "type": "integer" },
-                "hour": { "type": "integer" },
-                "usertype": { "type": "text" },
-                "gender": { "type": "text" },
-                "starttime": { "type": "date" },
-                "stoptime": { "type": "date" },
-                "tripduration": { "type": "float" },
-                "temperature": { "type": "float" },
-                "events": { "type": "text" },
-                "from_station_id":  { "type": "integer" },
-                "from_station_name": { "type": "text" },
-                "dpcapacity_start": { "type": "float" },
-                "to_station_id":  { "type": "integer" },
-                "to_station_name": { "type": "text" },
-                "dpcapacity_end": { "type": "float" },
-                "location_start": { "type": "geo_point" },
-                "location_end": { "type": "geo_point" }
-            }
+        "properties": {
+            "trip_id": { "type": "integer" },
+            "year": { "type": "integer" },
+            "month": { "type": "integer" },
+            "week": { "type": "integer" },
+            "day": { "type": "integer" },
+            "hour": { "type": "integer" },
+            "usertype": { "type": "text" },
+            "gender": { "type": "text" },
+            "starttime": { "type": "date" },
+            "stoptime": { "type": "date" },
+            "tripduration": { "type": "float" },
+            "temperature": { "type": "float" },
+            "events": { "type": "text" },
+            "from_station_id":  { "type": "integer" },
+            "from_station_name": { "type": "text" },
+            "dpcapacity_start": { "type": "float" },
+            "to_station_id":  { "type": "integer" },
+            "to_station_name": { "type": "text" },
+            "dpcapacity_end": { "type": "float" },
+            "location_start": { "type": "geo_point" },
+            "location_end": { "type": "geo_point" }
         }
     }
 }
