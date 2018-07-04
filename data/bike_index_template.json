@@ -4,8 +4,8 @@
     "version": 3,
     "order" : 3,
     "settings":{
-        "number_of_replicas": "0",
         "number_of_shards": "1",
+        "number_of_replicas": "0",
         "index.refresh_interval":"30s"
     },
     "mappings": {
@@ -19,8 +19,8 @@
                 "hour": { "type": "integer" },
                 "usertype": { "type": "text" },
                 "gender": { "type": "text" },
-                "starttime": { "type": "date_time" },
-                "stoptime": { "type": "date_time" },
+                "starttime": { "type": "date" },
+                "stoptime": { "type": "date" },
                 "tripduration": { "type": "float" },
                 "temperature": { "type": "float" },
                 "events": { "type": "text" },
