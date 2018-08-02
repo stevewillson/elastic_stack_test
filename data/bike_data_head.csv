@@ -1,0 +1,4 @@
+trip_id,year,month,week,day,hour,usertype,gender,starttime,stoptime,tripduration,temperature,events,from_station_id,from_station_name,latitude_start,longitude_start,dpcapacity_start,to_station_id,to_station_name,latitude_end,longitude_end,dpcapacity_end
+2355134,2014,6,27,0,23,Subscriber,Male,2014-06-30 23:57:00,2014-07-01 00:07:00,10.066666666666666,68.0,tstorms,131,Lincoln Ave & Belmont Ave,41.939365,-87.668385,15.0,303,Broadway & Cornelia Ave,41.945512,-87.64598000000001,15.0
+2355133,2014,6,27,0,23,Subscriber,Male,2014-06-30 23:56:00,2014-07-01 00:00:00,4.383333333333334,68.0,tstorms,282,Halsted St & Maxwell St,41.86458,-87.64693,15.0,22,May St & Taylor St,41.8694821,-87.6554864,15.0
+2355130,2014,6,27,0,23,Subscriber,Male,2014-06-30 23:33:00,2014-06-30 23:35:00,2.1,68.0,tstorms,327,Sheffield Ave & Webster Ave,41.921687,-87.65371400000001,19.0,225,Halsted St & Dickens Ave,41.919936,-87.64883,15.0
