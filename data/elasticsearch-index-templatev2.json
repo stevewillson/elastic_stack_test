@@ -1,13 +1,11 @@
 {
-  "elastic-health": {
+    "name": ["elastic-health"],
     "order": 3,
     "version": 50003,
-    "index_patterns": [
-      "elasticsearch-index*"
-    ],
+    "index_patterns": ["elasticsearch-index*"],
     "settings": {
       "index": {
-        "number_of_shards": "8",
+        "number_of_shards": "2",
         "number_of_replicas": "0",
         "refresh_interval": "30s"
       }
