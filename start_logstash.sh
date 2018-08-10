@@ -18,6 +18,9 @@
 
 # TODO: remove explicit path from starting logstash, mapping directories
 
+echo "This script should be run from the cloned directory for elastic-stack-test"
+echo "Present working directory is $PWD"
+echo "This is used to bind the locations within this directory to the docker container"
 
-sudo docker run --rm -it -v /home/user/elastic_stack_test/pipeline/:/usr/share/logstash/pipeline/ -v /home/user/elastic_stack_test/data/:/usr/share/logstash/input_data/ -p 9600:9600 -p 9999:9999 --link elastic:es --name logstash docker.elastic.co/logstash/logstash-oss:6.3.0 -r
+docker run --rm -it -v $PWD/pipeline/:/usr/share/logstash/pipeline/ -v $PWD/data/:/usr/share/logstash/input_data/ -p 9600:9600 -p 9999:9999 --link elastic:es --name logstash docker.elastic.co/logstash/logstash-oss:6.3.0 -r
 

@@ -1,0 +1,57 @@
+= Elastic Stack Docker Container Test
+Steve Willson
+8/10/18
+
+These scripts provide a quick setup to run the Elastic Stack on a local machine using docker containers
+
+== Setup instructions
+
+Clone the repository to your local workstation
+
+ $ git clone https://github.com/stevewillson/elastic_stack_test.git
+
+Change directories to the repository
+
+ $ cd elastic_stack_test
+
+Make the bash script files executable in the `elastic_stack_test` directory
+
+ $ chmod +x ./*.sh
+
+Add the docker repository and install the docker-ce package
+
+ $ sudo ./setup_docker.sh
+
+Download the docker containers for Elasticsearch, Kibana, and Logstash
+
+ $ sudo ./download_es_docker_containers.sh
+
+Start the Elastic Stack
+
+ $ sudo ./start_all.sh
+
+
+== Optional
+
+You can stop a docker container by using the following commands
+
+ $ sudo docker stop [elastic|kibana|logstash]
+
+You can start the containers individually 
+
+ $ sudo ./start_[elasticsearch|kibana|logstash].sh
+
+== Configuring a custom pipeline
+
+Logstash will look in the host directory `elastic_stack_test/pipeline` for logstash config files. It will attempt to reload the config files in that directory every 3 seconds, so you will not need to restart the logstash docker container to update the pipeline.
+
+If you want to add a tcp or http listener in logstash, make sure you edit the `start_logstash.sh` file and add `-p PORT:PORT` to the logstash config options to bind the docker port to the host.
+
+=== Host to Docker container directory binding (in `start_logstash.sh`)
+
+Files can be placed in these locations and used inside the logstash docker container
+
+`elastic_stack_test/pipeline` is bound to `/usr/share/logstash/pipeline/`
+
+`elastic_stack_test/data` is bound to `/usr/share/logstash/input_data/`
+
